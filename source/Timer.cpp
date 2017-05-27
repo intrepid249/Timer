@@ -40,7 +40,8 @@ Timer::Timer() {
 }
 
 Timer::~Timer() {
-	delete repeaterTask;
+	if (repeaterTask != nullptr)
+		delete repeaterTask;
 }
 
 void Timer::schedule(std::function<void()> callback, unsigned int delay) {
