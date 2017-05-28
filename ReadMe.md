@@ -16,9 +16,13 @@ Timer can be used to create either a do-once event after a certain abount of tim
 Creating a timer is as simple as instantiating a timer object from anywhere in the code's execution `Timer timer;`
 Timer currently has three (3) functions, with functionality and usage as described below:
   ```cpp
-  timer.schedule(...)``` -> this function will schedule a do-once event (defined as a lambda function in the parameter) after the specified amount of time.
+  timer.schedule(...)``` -> this function will schedule a do-once event 
+                            (defined as a lambda function in the parameter) after the specified amount of time.
   ```cpp
-  timer.scheduleAtFixedRate(...)``` -> this function will schedule a repeated event (defined as a lambda function in the parameter). The first delay parameter will set the delay until the function's initial call, the second delay parameter sets the time between function calls.
+  timer.scheduleAtFixedRate(...)``` -> this function will schedule a repeated event 
+                                       (defined as a lambda function in the parameter). The first delay parameter will set the delay 
+                                       until the function's initial call, the second delay parameter sets the time between 
+                                       function calls.
   ```cpp
   timer.cancel()``` -> this function will halt any activity on its thread
   
