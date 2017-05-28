@@ -1,7 +1,7 @@
-#Timer Library
+# Timer Library
 ---
 
-##Installation
+## Installation
 The timer library is provided in static implementation. Inside the `timers` folder should be two folders:
   - `include` which contains all of the header files required
   - `src` which contains the static .lib files
@@ -10,7 +10,7 @@ Then you will need to add `timer.lib` to linker input for "Release" configuratio
 If the project contains no `.lib` files within the src folder, the project can be built under Debug/Release configuration to generate these.
 ***
 
-##Getting Started
+## Getting Started
 Timer can be used to create either a do-once event after a certain abount of time, or an event that will repeat at set intervals for either the duration of execution or until its `cancel()` operation is called.
 
 Creating a timer is as simple as instantiating a timer object from anywhere in the code's execution `Timer timer;`
