@@ -4,6 +4,7 @@
 #include <thread>
 #include <ctime>
 
+// Test out the timer functions
 auto main(int argc, char** argv) -> int {
 	Timer runOnce, repeater;
 
