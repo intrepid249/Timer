@@ -17,13 +17,13 @@ Timer currently has three (3) functions, with functionality and usage as describ
   ```cpp
   timer.schedule(...)
   ``` 
-  This function will schedule a do-once event (defined as a lambda function in the parameter) 
+  This function will schedule a do-once event (which can be defined as a lambda function in the parameter) 
   after the specified amount of time.
     
   ```cpp
   timer.scheduleAtFixedRate(...)
   ``` 
-  This function will schedule a repeated event (defined as a lambda function in the parameter). 
+  This function will schedule a repeated event (which can be defined as a lambda function in the parameter). 
   The first delay parameter will set the delay until the function's initial call, the second delay
   parameter sets the time between function calls.
     
